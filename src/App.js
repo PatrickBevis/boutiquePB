@@ -31,9 +31,7 @@ function App() {
       <div className="container-fluid"></div>
       <HomeScreen />
 
-      <div className="row">
-        {categoryElements}
-      </div>
+      
 
 
 
