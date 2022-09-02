@@ -1,4 +1,6 @@
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle';
 import './App.css';
 import CategoryCard from './components/CategoryCard/CategoryCard';
 import HomeScreen from './pages/HomeScreen';
@@ -10,9 +12,9 @@ function App() {
       <HomeScreen />
 
       <div className="row">
-        <div className="col-12 col-lg-3"><CategoryCard />
+        
         </div>
-      </div>
+      
 
 
 
