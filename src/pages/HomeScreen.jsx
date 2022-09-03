@@ -14,7 +14,7 @@ const HomeScreen = () => {
     ]
 
     const categoryElements = categoriesInit.map(category =>
-        <div className='d-flex col-lg-3 col-12' key={category.id}>
+        <div className='d-flex col-lg-3 col-12 d-flex justify-content-center' key={category.id}>
             <CategoryCard title={category.title} desc={category.desc} image={category.image} />
         </div>
 
