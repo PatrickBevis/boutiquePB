@@ -1,10 +1,8 @@
-
+import {useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import './App.css';
-import CategoryCard from './components/CategoryCard/CategoryCard';
 import ContactForm from './components/ContactForm/ContactForm';
-import Darkmode from './components/DarkMode/Darkmode';
 import HomeScreen from './pages/HomeScreen';
 
 
@@ -13,18 +11,27 @@ import HomeScreen from './pages/HomeScreen';
 function App() {
 
 
+  const [isDark, setIsDark] = useState(false);
 
-
+  const handleOnClick = () =>{
+    setIsDark(!isDark);
   
+  }
 
   
 
   return (
     <>
-      <div className="container-fluid"></div>
+    <div className={'container-fluid ' + (isDark ?'bg-dark text-white': 'bg-white text-dark')}>
+      <div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" onClick={handleOnClick} checked={isDark}/>
+  <label class="form-check-label" for="flexSwitchCheckChecked">{isDark?'Dark':'light'}</label>
+  </div>
       <HomeScreen />
       <ContactForm />
-      <Darkmode />
+      </div>
+      
+      
       
 
       
