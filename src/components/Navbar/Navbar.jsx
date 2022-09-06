@@ -11,7 +11,7 @@ const Navbar = ({isDark, setIsDark}) => {
 
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <nav className={"navbar navbar-expand-lg " + (isDark ? 'navbar-dark bg-dark text-white' : 'navbar-light bg-light')}>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item">
@@ -22,10 +22,10 @@ const Navbar = ({isDark, setIsDark}) => {
                         </li>
                     </ul>
 
-                    <div className={'container-fluid' + (isDark ? 'bg-dark text-white' : 'bg-white text-dark')}>
+                    <div className='container-fluid' >
                         <div className="form-check form-switch">
                             <input className="form-check-input" type="checkbox" id="flexSwitchCheckChecked" onChange={handleOnClick} checked={isDark} />
-                            <label className="form-check-label" for="flexSwitchCheckChecked">{isDark ? 'Dark' : 'light'}</label>
+                            <label className="form-check-label" for="flexSwitchCheckChecked">{isDark ? 'Dark' : 'Light'}</label>
                         </div>
                     </div>
                 </div>

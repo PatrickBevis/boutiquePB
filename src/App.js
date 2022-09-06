@@ -26,8 +26,8 @@ function App() {
           setIsDark={setIsDark}/>
 
 <Routes>
-  <Route path = "/home" element={<HomeScreen/>} />
-  <Route path = "/" element={<HomeScreen/>} />
+  <Route path = "/home" element={<HomeScreen isDark={isDark}/>} />
+  <Route path = "/" element={<HomeScreen isDark={isDark}/>} />
   
 </Routes>
 

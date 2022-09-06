@@ -3,7 +3,7 @@ import CategoryCard from '../components/CategoryCard/CategoryCard';
 import ContactForm from '../components/ContactForm/ContactForm';
 import categoriesInit from '../Data/category.data';
 
-const HomeScreen = () => {
+const HomeScreen = ({isDark}) => {
 
 
  
@@ -16,10 +16,11 @@ const HomeScreen = () => {
     );
     return (
         <>
+        <div className={isDark ? 'bg-dark text-white' : 'bg-white text-dark'} >
             <h1 className='mb-5'>La boutique de Patrick Bévis</h1>
             <div className="row">{categoryElements}
             <ContactForm />
-            </div>
+            </div></div>
 
 
         </>
