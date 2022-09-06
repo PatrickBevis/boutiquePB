@@ -28,7 +28,7 @@ const handleOnSubmit =(e) => {
     return (
         <>
             <div clas="container-fluid ">
-                <div className="bg-black mt-5">
+                <div className="bg-dark mt-5">
                     <h3 className='d-flex justify-content-center text-white mt-3'>Contactez-nous !</h3>
                     
                      <form className="mt-5 row " onSubmit={handleOnSubmit}>

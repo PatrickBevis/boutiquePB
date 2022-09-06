@@ -6,6 +6,7 @@ import ContactForm from './components/ContactForm/ContactForm';
 import HomeScreen from './pages/HomeScreen';
 import Navbar from './components/Navbar/Navbar';
 import { Routes, Route } from 'react-router-dom';
+import ProductScreen from './pages/ProductScreen';
 
   
 
@@ -28,7 +29,7 @@ function App() {
 <Routes>
   <Route path = "/home" element={<HomeScreen isDark={isDark}/>} />
   <Route path = "/" element={<HomeScreen isDark={isDark}/>} />
-  
+  <Route path = "/product" element={<ProductScreen/>} />
 </Routes>
 
 
